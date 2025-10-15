@@ -31,8 +31,12 @@ namespace MotoBikeStore.Controllers
             }
             
             // Lưu thông tin user vào session
-            HttpContext.Session.SetObjectAsJson(USER_KEY, new { 
-                user.Id, user.Email, user.FullName, user.Role 
+            HttpContext.Session.SetObjectAsJson(USER_KEY, new SessionUser
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FullName = user.FullName,
+                Role = user.Role
             });
             
             if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
@@ -90,12 +94,12 @@ namespace MotoBikeStore.Controllers
         // Profile
         public IActionResult Profile()
         {
-            var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
             if (currentUser == null) return RedirectToAction("Login");
-            
-            var user = _db.Users.Find((int)currentUser.Id);
+
+            var user = _db.Users.Find(currentUser.Id);
             if (user == null) return RedirectToAction("Logout");
-            
+
             return View(user);
         }
         
@@ -103,10 +107,10 @@ namespace MotoBikeStore.Controllers
         [HttpPost]
         public IActionResult Profile(User updatedUser)
         {
-            var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
             if (currentUser == null) return RedirectToAction("Login");
-            
-            var user = _db.Users.Find((int)currentUser.Id);
+
+            var user = _db.Users.Find(currentUser.Id);
             if (user == null) return RedirectToAction("Logout");
             
             user.FullName = updatedUser.FullName;

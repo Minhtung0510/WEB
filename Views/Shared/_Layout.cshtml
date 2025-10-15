@@ -1,9 +1,10 @@
 @using MotoBikeStore.Controllers
-@{ 
+@using MotoBikeStore.Models
+@{
   Layout = null;
-  var currentUser = Context.Session.GetObjectFromJson<dynamic>("CURRENT_USER");
+  var currentUser = Context.Session.GetObjectFromJson<SessionUser>("CURRENT_USER");
   var isLoggedIn = currentUser != null;
-  var isAdmin = isLoggedIn && currentUser.Role == "Admin";
+  var isAdmin = currentUser?.Role == "Admin";
 }
 <!doctype html>
 <html lang="vi">
