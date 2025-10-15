@@ -1,0 +1,79 @@
+@model MotoBikeStore.Models.Coupon
+@{ Layout="~/Views/Shared/_Layout.cshtml"; ViewData["Title"]="Sửa mã giảm giá"; }
+
+<div class="container py-4">
+  <h3 class="mb-4"><i class="fas fa-edit me-2"></i>Sửa mã giảm giá: @Model.Code</h3>
+  
+  <div class="card">
+    <div class="card-body">
+      <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="UsedCount" />
+        
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+        
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Mã giảm giá</label>
+            <input asp-for="Code" class="form-control" readonly />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Mô tả</label>
+            <input asp-for="Description" class="form-control" required />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Giảm theo %</label>
+            <input asp-for="DiscountPercent" type="number" class="form-control" min="0" max="100" />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Giảm số tiền cố định</label>
+            <input asp-for="DiscountAmount" type="number" class="form-control" min="0" step="1000" />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Đơn hàng tối thiểu</label>
+            <input asp-for="MinOrderAmount" type="number" class="form-control" min="0" step="1000" />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Giảm tối đa</label>
+            <input asp-for="MaxDiscountAmount" type="number" class="form-control" min="0" step="1000" />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Ngày bắt đầu</label>
+            <input asp-for="StartDate" type="date" class="form-control" required />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Ngày kết thúc</label>
+            <input asp-for="EndDate" type="date" class="form-control" required />
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label">Giới hạn sử dụng</label>
+            <input asp-for="UsageLimit" type="number" class="form-control" min="0" />
+            <small class="text-muted">Đã sử dụng: @Model.UsedCount lần</small>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="form-check mt-4">
+              <input asp-for="IsActive" class="form-check-input" type="checkbox" />
+              <label class="form-check-label" asp-for="IsActive">Đang kích hoạt</label>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-save me-2"></i>Cập nhật
+            </button>
+            <a href="/Coupons" class="btn btn-secondary ms-2">Hủy</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

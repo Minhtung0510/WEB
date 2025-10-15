@@ -1,4 +1,10 @@
-@{ Layout = null; }
+@using MotoBikeStore.Controllers
+@{ 
+  Layout = null;
+  var currentUser = Context.Session.GetObjectFromJson<dynamic>("CURRENT_USER");
+  var isLoggedIn = currentUser != null;
+  var isAdmin = isLoggedIn && currentUser.Role == "Admin";
+}
 <!doctype html>
 <html lang="vi">
 <head>
@@ -15,8 +21,28 @@
     <div class="container d-flex justify-content-between">
       <div><i class="fas fa-phone"></i> Hotline: 1900-xxxx | <i class="fas fa-envelope ms-2"></i> info@motobike.vn</div>
       <div>
-        <a href="#" class="text-white text-decoration-none me-3"><i class="fas fa-user"></i> Đăng nhập</a>
-        <a href="#" class="text-white text-decoration-none"><i class="fas fa-user-plus"></i> Đăng ký</a>
+        @if(isLoggedIn)
+        {
+          <span class="me-3">
+            <i class="fas fa-user-circle me-1"></i>
+            Xin chào, <strong>@currentUser.FullName</strong>
+          </span>
+          <a href="/Auth/Profile" class="text-white text-decoration-none me-3">
+            <i class="fas fa-user"></i> Tài khoản
+          </a>
+          <a href="/Auth/Logout" class="text-white text-decoration-none">
+            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+          </a>
+        }
+        else
+        {
+          <a href="/Auth/Login" class="text-white text-decoration-none me-3">
+            <i class="fas fa-user"></i> Đăng nhập
+          </a>
+          <a href="/Auth/Register" class="text-white text-decoration-none">
+            <i class="fas fa-user-plus"></i> Đăng ký
+          </a>
+        }
       </div>
     </div>
   </div>
@@ -31,18 +57,45 @@
       <div id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link active" href="/">Trang chủ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Xe máy</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Phụ tùng</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?categoryId=1">Xe tay ga</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?categoryId=2">Xe số</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Compare">So sánh</a></li>
+          @if(isLoggedIn)
+          {
+            <li class="nav-item"><a class="nav-link" href="/Orders/MyOrders">Đơn hàng của tôi</a></li>
+          }
+          <li class="nav-item"><a class="nav-link" href="/Orders/Track">Tra cứu đơn</a></li>
+          @if(isAdmin)
+          {
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-cog"></i> Admin
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Admin">Dashboard</a></li>
+                <li><a class="dropdown-item" href="/Products">Quản lý sản phẩm</a></li>
+                <li><a class="dropdown-item" href="/Admin/Orders">Quản lý đơn hàng</a></li>
+                <li><a class="dropdown-item" href="/Coupons">Quản lý khuyến mãi</a></li>
+                <li><a class="dropdown-item" href="/Admin/Reports">Báo cáo doanh thu</a></li>
+              </ul>
+            </li>
+          }
         </ul>
         <form method="get" action="/" class="d-flex align-items-center search-bar">
           <input name="q" class="form-control" placeholder="Tìm kiếm sản phẩm...">
           <button class="btn"><i class="fas fa-search"></i></button>
         </form>
-        <a href="/Cart" class="btn btn-outline-danger ms-3 position-relative">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
+        <div class="ms-3 d-flex gap-2">
+          <a href="/Compare" class="btn btn-outline-info position-relative">
+            <i class="fas fa-balance-scale"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="compare-count">
+              0
+            </span>
+          </a>
+          <a href="/Cart" class="btn btn-outline-danger position-relative">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -64,10 +117,11 @@
           <a href="#" class="footer-link">Liên hệ</a>
         </div>
         <div class="col-md-2">
-          <h6>Hỗ trợ</h6><a href="#" class="footer-link">Bảo hành</a>
+          <h6>Hỗ trợ</h6>
+          <a href="#" class="footer-link">Bảo hành</a>
           <a href="#" class="footer-link">Mua hàng</a>
           <a href="#" class="footer-link">Thanh toán</a>
-          <a href="#" class="footer-link">Vận chuyển</a>
+          <a href="/Orders/Track" class="footer-link">Tra cứu đơn hàng</a>
         </div>
         <div class="col-md-4">
           <h6>Liên hệ</h6>
@@ -83,5 +137,18 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   <script src="/js/site.js"></script>
+  <script>
+    // Update compare count badge
+    fetch('/Compare/Count')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('compare-count').textContent = data.count;
+        if(data.count > 0) {
+          document.getElementById('compare-count').style.display = 'inline-block';
+        } else {
+          document.getElementById('compare-count').style.display = 'none';
+        }
+      });
+  </script>
 </body>
 </html>

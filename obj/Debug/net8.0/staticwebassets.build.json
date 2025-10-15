@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "erJJGnMYzXz58suND8ufch6dX77p90/q0GOYKfkJql4=",
+  "Hash": "4ZYKDdl/1yVVHTEmyPpsIq1AFjwPK49KkNXlNGOUBUM=",
   "Source": "MotoBikeStore",
   "BasePath": "_content/MotoBikeStore",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MotoBikeStore\\wwwroot",
       "Source": "MotoBikeStore",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -31,17 +31,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ksljuvmgi0",
-      "Integrity": "FA9q+D4PFygKLjW6/UD0xAab2V9zQW4F/l2k4ZH5aK4=",
+      "Fingerprint": "4nkggjrn7a",
+      "Integrity": "gHhNWRA6TGIpXIPxavDw/tLoaLYOUi+3D9pvEXQeJdU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "images/airblade160#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\images\\airblade160.jpg"
     },
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "images/exciter155#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\images\\exciter155.jpg"
     },
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "images/janus#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\images\\janus.jpg"
     },
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "images/vision2024#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\vision2024.jpg"
     },
     {
-      "Identity": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
+      "Identity": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
       "SourceId": "MotoBikeStore",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
+      "ContentRoot": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\",
       "BasePath": "_content/MotoBikeStore",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -145,8 +145,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
+      "Route": "css/site.4nkggjrn7a.css",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -155,7 +155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2874"
+          "Value": "6558"
         },
         {
           "Name": "Content-Type",
@@ -163,48 +163,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FA9q+D4PFygKLjW6/UD0xAab2V9zQW4F/l2k4ZH5aK4=\""
+          "Value": "\"gHhNWRA6TGIpXIPxavDw/tLoaLYOUi+3D9pvEXQeJdU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:30:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FA9q+D4PFygKLjW6/UD0xAab2V9zQW4F/l2k4ZH5aK4="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ksljuvmgi0.css",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2874"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FA9q+D4PFygKLjW6/UD0xAab2V9zQW4F/l2k4ZH5aK4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:30:57 GMT"
+          "Value": "Wed, 15 Oct 2025 15:30:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -214,7 +177,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ksljuvmgi0"
+          "Value": "4nkggjrn7a"
         },
         {
           "Name": "label",
@@ -222,13 +185,50 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FA9q+D4PFygKLjW6/UD0xAab2V9zQW4F/l2k4ZH5aK4="
+          "Value": "sha256-gHhNWRA6TGIpXIPxavDw/tLoaLYOUi+3D9pvEXQeJdU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gHhNWRA6TGIpXIPxavDw/tLoaLYOUi+3D9pvEXQeJdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 15:30:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gHhNWRA6TGIpXIPxavDw/tLoaLYOUi+3D9pvEXQeJdU="
         }
       ]
     },
     {
       "Route": "images/airblade160.jae69g8dky.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -249,7 +249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -273,7 +273,7 @@
     },
     {
       "Route": "images/airblade160.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -294,7 +294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -310,7 +310,7 @@
     },
     {
       "Route": "images/exciter155.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -331,7 +331,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -347,7 +347,7 @@
     },
     {
       "Route": "images/exciter155.vkrdvd0fjo.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -368,7 +368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -392,7 +392,7 @@
     },
     {
       "Route": "images/janus.6p22t7deeh.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -413,7 +413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -437,7 +437,7 @@
     },
     {
       "Route": "images/janus.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -458,7 +458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -474,7 +474,7 @@
     },
     {
       "Route": "images/vision2024.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -495,7 +495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -511,7 +511,7 @@
     },
     {
       "Route": "images/vision2024.xchgfaycn3.jpg",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -532,7 +532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -556,7 +556,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -577,7 +577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -593,7 +593,7 @@
     },
     {
       "Route": "js/site.updabr6k65.js",
-      "AssetFile": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
+      "AssetFile": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -614,7 +614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Oct 2025 12:23:54 GMT"
+          "Value": "Wed, 15 Oct 2025 14:01:52 GMT"
         },
         {
           "Name": "Cache-Control",

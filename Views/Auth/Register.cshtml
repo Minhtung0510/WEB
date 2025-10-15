@@ -1,0 +1,60 @@
+<!-- Views/Auth/Register.cshtml -->
+@model MotoBikeStore.Models.User
+@{ Layout="~/Views/Shared/_Layout.cshtml"; ViewData["Title"]="Đăng ký"; }
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-body p-4">
+          <h3 class="text-center mb-4">Đăng ký tài khoản</h3>
+          
+          <form method="post">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Họ tên</label>
+                <input asp-for="FullName" class="form-control" required />
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" required />
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Mật khẩu</label>
+                <input type="password" name="password" class="form-control" required minlength="6" />
+                <small class="text-muted">Tối thiểu 6 ký tự</small>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Xác nhận mật khẩu</label>
+                <input type="password" name="confirmPassword" class="form-control" required />
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Số điện thoại</label>
+              <input asp-for="Phone" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Địa chỉ</label>
+              <textarea asp-for="Address" class="form-control" rows="2"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100 mb-3">Đăng ký</button>
+            
+            <div class="text-center">
+              Đã có tài khoản? <a href="/Auth/Login">Đăng nhập</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj": {}
+    "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj": {
+    "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj",
+        "projectUniqueName": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj",
         "projectName": "MotoBikeStore",
-        "projectPath": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj",
-        "packagesPath": "C:\\Users\\MSI_MAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\obj\\",
+        "projectPath": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\MotoBikeStore.csproj",
+        "packagesPath": "C:\\Users\\CytekPC\\.nuget\\packages\\",
+        "outputPath": "E:\\Dự án cá nhân\\NewProject\\MotoBikeStore_aspnetcore_sample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MSI_MAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CytekPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -80,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
