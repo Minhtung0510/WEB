@@ -1,0 +1,21 @@
+@model IEnumerable<MotoBikeStore.Models.Product>
+@{ Layout="~/Views/Shared/_Layout.cshtml"; ViewData["Title"]="Giỏ hàng"; }
+<h3>Giỏ hàng</h3>
+@if (!Model.Any()) {
+  <p>Giỏ hàng trống. <a href="/">Tiếp tục mua sắm</a></p>
+} else {
+<table class="table align-middle">
+  <thead><tr><th>SP</th><th>Tên</th><th>Giá</th><th></th></tr></thead>
+  <tbody>
+  @foreach (var p in Model) {
+    <tr>
+      <td><img src="@p.ImageUrl" style="height:50px" /></td>
+      <td>@p.Name</td>
+      <td class="text-danger fw-bold">@p.Price.ToString("N0") ₫</td>
+      <td><a class="btn btn-sm btn-outline-danger" href="/Cart/Remove/@p.Id">Bỏ</a></td>
+    </tr>
+  }
+  </tbody>
+</table>
+<a class="btn btn-success" href="/Orders/Checkout">Thanh toán</a>
+}

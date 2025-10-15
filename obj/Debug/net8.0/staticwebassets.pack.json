@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\airblade160.jpg",
+      "PackagePath": "staticwebassets\\images\\airblade160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\exciter155.jpg",
+      "PackagePath": "staticwebassets\\images\\exciter155.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\janus.jpg",
+      "PackagePath": "staticwebassets\\images\\janus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\images\\vision2024.jpg",
+      "PackagePath": "staticwebassets\\images\\vision2024.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MSI_MAN\\Downloads\\MotoBikeStore_aspnetcore_sample\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MotoBikeStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MotoBikeStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MotoBikeStore.props",
+      "PackagePath": "build\\MotoBikeStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MotoBikeStore.props",
+      "PackagePath": "buildMultiTargeting\\MotoBikeStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MotoBikeStore.props",
+      "PackagePath": "buildTransitive\\MotoBikeStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,9 @@
+@model MotoBikeStore.Models.Order
+@{ Layout="~/Views/Shared/_Layout.cshtml"; ViewData["Title"]="Thanh toán"; }
+<h3>Thanh toán</h3>
+<form method="post" class="row g-3">
+  <div class="col-md-4"><label class="form-label">Họ tên</label><input asp-for="CustomerName" class="form-control" /></div>
+  <div class="col-md-4"><label class="form-label">SĐT</label><input asp-for="Phone" class="form-control" /></div>
+  <div class="col-md-4"><label class="form-label">Địa chỉ</label><input asp-for="Address" class="form-control" /></div>
+  <div class="col-12"><button class="btn btn-success">Xác nhận đặt hàng</button></div>
+</form>

@@ -1,0 +1,17 @@
+@{ ViewData["Title"]="Thêm sản phẩm"; }
+@model MotoBikeStore.Models.Product
+@{ Layout="~/Views/Shared/_Layout.cshtml"; }
+<h3>@ViewData["Title"]</h3>
+<form method="post" class="row g-3">
+  <div class="col-md-6"><label class="form-label">Tên</label><input asp-for="Name" class="form-control" /></div>
+  <div class="col-md-3"><label class="form-label">Hãng</label><input asp-for="Brand" class="form-control" /></div>
+  <div class="col-md-3"><label class="form-label">Giá</label><input asp-for="Price" class="form-control" /></div>
+  <div class="col-md-4"><label class="form-label">Động cơ</label><input asp-for="Engine" class="form-control" /></div>
+  <div class="col-md-4"><label class="form-label">Nhiên liệu</label><input asp-for="Fuel" class="form-control" /></div>
+  <div class="col-md-4"><label class="form-label">Đánh giá</label><input asp-for="Rating" class="form-control" /></div>
+  <div class="col-12"><label class="form-label">Ảnh (URL /images/xxx.jpg)</label><input asp-for="ImageUrl" class="form-control" /></div>
+  <div class="col-12">
+    <button class="btn btn-primary">Lưu</button>
+    <a href="/Products" class="btn btn-secondary">Hủy</a>
+  </div>
+</form>

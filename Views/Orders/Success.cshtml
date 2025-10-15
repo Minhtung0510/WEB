@@ -1,0 +1,8 @@
+@model MotoBikeStore.Models.Order
+@{ Layout="~/Views/Shared/_Layout.cshtml"; ViewData["Title"]="Đặt hàng thành công"; }
+<div class="text-center py-5">
+  <h3>Đặt hàng thành công</h3>
+  <p>Mã đơn: <strong>#@Model.Id</strong></p>
+  <p>Trạng thái: <span class="badge bg-success">@Model.Status</span></p>
+  <a class="btn btn-primary mt-3" href="/">Về trang chủ</a>
+</div>
