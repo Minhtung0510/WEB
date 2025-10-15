@@ -15,7 +15,7 @@ namespace MotoBikeStore.Controllers
         // Kiểm tra quyền admin
         private bool IsAdmin()
         {
-            var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
             return currentUser != null && currentUser.Role == "Admin";
         }
         

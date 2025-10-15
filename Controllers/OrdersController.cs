@@ -29,10 +29,10 @@ namespace MotoBikeStore.Controllers
             ViewBag.Subtotal = products.Sum(p => p.Price);
             
             // Tự động điền thông tin nếu đã đăng nhập
-            var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
             if (currentUser != null)
             {
-                var user = _db.Users.Find((int)currentUser.Id);
+                var user = _db.Users.Find(currentUser.Id);
                 return View(new Order { 
                     CustomerName = user?.FullName ?? "", 
                     Phone = user?.Phone ?? "",
@@ -113,8 +113,8 @@ namespace MotoBikeStore.Controllers
             order.Status = "Pending";
             
             // Liên kết với user nếu đã đăng nhập
-            var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
-            if (currentUser != null) order.UserId = (int)currentUser.Id;
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
+            if (currentUser != null) order.UserId = currentUser.Id;
             
             _db.Orders.Add(order);
             _db.SaveChanges();
@@ -151,15 +151,13 @@ namespace MotoBikeStore.Controllers
         // Danh sách đơn hàng của user
         public IActionResult MyOrders()
         {
-          var currentUser = HttpContext.Session.GetObjectFromJson<dynamic>(USER_KEY);
-        if (currentUser == null) return RedirectToAction("Login", "Auth");
+            var currentUser = HttpContext.Session.GetObjectFromJson<SessionUser>(USER_KEY);
+            if (currentUser == null) return RedirectToAction("Login", "Auth");
 
-        int userId = (int)currentUser.Id;  // ← Lưu vào biến trước
-
-        var orders = InMemoryDataStore.Orders
-        .Where(o => o.UserId == userId)  // ← Dùng biến int, không dùng dynamic
-        .OrderByDescending(o => o.OrderDate)
-        .ToList();
+            var orders = InMemoryDataStore.Orders
+                .Where(o => o.UserId == currentUser.Id)
+                .OrderByDescending(o => o.OrderDate)
+                .ToList();
                 
             return View(orders);
         }
